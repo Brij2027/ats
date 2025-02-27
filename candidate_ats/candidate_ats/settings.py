@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-load_dotenv(dotenv_path=f"{BASE_DIR.parent}\.env")
+load_dotenv(dotenv_path=f"{BASE_DIR.parent}/.env")
 
 
 # Quick-start development settings - unsuitable for production
@@ -45,12 +45,12 @@ INSTALLED_APPS = [
 
 THIRD_PARTY_APPS = [
     'rest_framework',
+    'drf_yasg',
     'phonenumber_field',
 ]
 
 CUSTOM_APPS = [
     'candidate', 
-    'search',
 ]
 
 INSTALLED_APPS += THIRD_PARTY_APPS + CUSTOM_APPS
